@@ -17,7 +17,6 @@ export default class Header extends React.Component {
 
   toggle(e) {
     this.setState(prevState => ({ darkMode: !prevState.darkMode }));
-    console.log(this.state);
   }
 
   render() {
