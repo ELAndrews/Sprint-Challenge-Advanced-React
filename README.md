@@ -23,9 +23,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+Class components are widely used in the working environment; therefore if you are working on a pre-existing application is may be a better option to continue using this old format.
+
 - [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
+
+  - componentDidMount() - this is where we use eventListeners, jQuery, AJAX request, among other things.
+  - componentDidUpdate() - this is invoked is any updates occur. Therefore, it is not run on the initial render. It allows us to compare the original data with the new update.
+  - componentWillUnmount() - unlike the other 2, this is invoked BEFORE the component is removed. This is where we are able to clear any states required, cancels requests, among others.
+
+* [ ] What is the purpose of a custom hook?
+
+Custom hooks allow us to remove functions and keep them in a centralised location within the app to utilise their logic in different components. They hold stateful logic.
+
 - [ ] Why is it important to test our apps?
+
+There are different types of testing libraries which enable us to test different aspects of our code: units, components, and UI. It is important to perform tests on our app to ensure that our code is meeting the design needs and that there are no unexpected bugs in our code. Consider whether the output is not as required or invalid inputs are entered, this could cause the app to crash so this requires attention to fix.
 
 ## Project Set Up
 
@@ -44,7 +57,7 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by merging the branch back into master.
 
