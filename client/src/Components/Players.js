@@ -12,7 +12,6 @@ export default class Players extends React.Component {
   }
 
   componentDidMount() {
-    console.log(`component did mount`);
     axios
       .get("http://localhost:5000/api/players")
       .then(response => {
@@ -25,15 +24,10 @@ export default class Players extends React.Component {
       });
   }
 
-  componentDidUpdate() {
-    console.log(`component has updated`);
-  }
-
   render() {
-    console.log(`working`);
-    console.log(this.state);
     return (
       <div>
+        <h2>Meet the players</h2>
         {this.state.players.map((curr, index) => {
           return (
             <div key={index}>

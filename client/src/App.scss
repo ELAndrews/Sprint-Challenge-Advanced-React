@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+.darkMode {
+  background-color: #02082a;
+  color: white;
+
+  .appHeader {
+    background-color: #0c1657;
+  }
+
+  .slidingBtn {
+    border: 1px solid white;
+    background-color: #02082a;
+  }
+
+  .btnSpot {
+    border: 1px solid white;
+    background-color: #17215e;
+    right: 25px;
+  }
+
+  .playerCard {
+    background-color: #0c1657;
+  }
+}
+
 .appHeader {
   width: 100vw;
   padding-top: 20px;
@@ -9,7 +33,7 @@
   height: 100px;
 }
 
-.darkMode {
+.darkModeBtn {
   width: 140px;
   display: flex;
   align-items: center;
@@ -25,6 +49,12 @@
   background-color: #eaf6f7;
   border: 1px solid #55ebf6;
   border-radius: 15px;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .btnSpot {
@@ -32,6 +62,8 @@
   height: 25px;
   background-color: #55ebf6;
   border-radius: 15px;
+  position: absolute;
+  right: 0px;
 }
 
 .playerCard {
